@@ -1,6 +1,20 @@
 /* Interactive portfolio layer. Keeps the existing gallery and its content. */
 html { overflow-x: clip; scroll-padding-top: 5rem; }
 body { width: 100%; }
+.portfolio-protected,
+.portfolio-protected img,
+.portfolio-protected h1,
+.portfolio-protected h2,
+.portfolio-protected h3,
+.portfolio-protected h4,
+.portfolio-protected p,
+.portfolio-protected span,
+.portfolio-protected li {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.portfolio-protected img { -webkit-user-drag: none; user-drag: none; }
 main, .hero, .portrait-stage, .project, .project-body, .section-head > * { min-width: 0; }
 .hero { overflow: clip; }
 .portrait-glow { max-width: 100%; }

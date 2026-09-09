@@ -80,6 +80,19 @@
   heroLink.href = "#experiencia"; heroLink.className = "button button-primary"; heroLink.textContent = "Experimentar agora";
   document.querySelector(".hero .actions .button-primary").className = "button button-secondary";
   document.querySelector(".hero .actions").prepend(heroLink);
+  document.body.classList.add("portfolio-protected");
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
+  document.addEventListener("copy", (event) => event.preventDefault());
+  document.addEventListener("cut", (event) => event.preventDefault());
+  document.addEventListener("dragstart", (event) => {
+    if (event.target instanceof HTMLImageElement) event.preventDefault();
+  });
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    const primary = event.ctrlKey || event.metaKey;
+    const devShortcut = primary && event.shiftKey && ["i", "j", "c"].includes(key);
+    if (event.key === "F12" || devShortcut || (primary && ["c", "s", "u", "p"].includes(key))) event.preventDefault();
+  });
   const tabs = [...section.querySelectorAll('[role="tab"]')];
   const surface = section.querySelector("#demoSurface");
   const feedback = section.querySelector("#demoFeedback");
