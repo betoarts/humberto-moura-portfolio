@@ -76,10 +76,6 @@
   const navLink = document.createElement("a");
   navLink.href = "#experiencia"; navLink.textContent = "Experimente";
   document.querySelector(".nav-links").prepend(navLink);
-  const heroLink = document.createElement("a");
-  heroLink.href = "#experiencia"; heroLink.className = "button button-primary"; heroLink.textContent = "Experimentar agora";
-  document.querySelector(".hero .actions .button-primary").className = "button button-secondary";
-  document.querySelector(".hero .actions").prepend(heroLink);
   document.body.classList.add("portfolio-protected");
   document.addEventListener("contextmenu", (event) => event.preventDefault());
   document.addEventListener("copy", (event) => event.preventDefault());

@@ -4,7 +4,7 @@ Portfólio interativo de Humberto Moura Neto, desenvolvedor e criador de produto
 
 ## Destaques
 
-- Cards de projetos com detalhes técnicos e links aos repositórios.
+- Oito projetos com detalhes técnicos e contato contextual pelo WhatsApp.
 - Simulações interativas inspiradas em AssetTrack TI, Restaurant Queue, HabitFlow e LocalTV.
 - Layout responsivo, acessível e otimizado para dispositivos móveis.
 - Botão de contato por WhatsApp com posicionamento seguro para telas mobile.
@@ -21,6 +21,14 @@ O projeto é estático e não requer banco de dados nem variáveis de ambiente.
 5. Vincule seu domínio e habilite HTTPS.
 
 Veja instruções complementares em [DEPLOY_EASYPANEL.md](DEPLOY_EASYPANEL.md).
+
+## Experiência e direção visual
+
+Interface escura com painéis translúcidos, fundo fotográfico local com blur, animações de entrada e profundidade discreta. Seções de serviços, processo, perguntas frequentes e escolha de interesse ajudam o visitante a iniciar uma conversa sobre seu projeto.
+
+HTML, CSS e JavaScript nativos, sem dependência de framework de animação. Respeita movimento reduzido; inclui navegação por teclado e adaptação para celular. A Apple Brasil foi consultada como referência de apresentação de produtos; não se trata de reprodução de seu código ou stack interna.
+
+As capas dos projetos continuam sendo carregadas dos respectivos repositórios do GitHub. A foto do desenvolvedor é local. O Nginx revalida os assets para evitar conteúdo desatualizado após novos deploys.
 
 ## Tecnologias
 
