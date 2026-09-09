@@ -1,0 +1,9 @@
+.git
+.github
+.openai
+tests
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+.DS_Store
