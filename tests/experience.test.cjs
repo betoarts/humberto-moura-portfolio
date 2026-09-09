@@ -42,7 +42,7 @@ for (const mode of modes) {
 }
 const html = fs.readFileSync(path.join(root, "dist/index.html"), "utf8");
 for (const script of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) new Function(script[1]);
-check((html.match(/name:"/g) || []).length === 8, "All eight original projects preserved");
+check((html.match(/<article class="project reveal"/g) || []).length === 8, "All eight original projects preserved");
 check(html.includes("5554991680204"), "Real contact number retained");
 check(html.includes("viewport-fit=cover"), "Viewport supports safe-area insets");
 const css = fs.readFileSync(path.join(root, "dist/assets/experience.css"), "utf8");

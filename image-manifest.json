@@ -1,0 +1,156 @@
+{
+  "assettrack-ti": {
+    "source": "https://github.com/humbertomouratec/assettrack_ti/blob/main/docs/images/readme-hero-v2.0.1-executive.png",
+    "originalBytes": 1412305,
+    "small": {
+      "url": "/assets/media/assettrack-ti-640.f74d616342ad.webp",
+      "bytes": 5490,
+      "width": 640,
+      "height": 256
+    },
+    "large": {
+      "url": "/assets/media/assettrack-ti-1200.1bca3c8a8da4.webp",
+      "bytes": 15328,
+      "width": 1200,
+      "height": 480
+    }
+  },
+  "manager-restaurante": {
+    "source": "https://github.com/betoarts/Manager-Restaurante-main/blob/main/docs/manager-restaurante-cover.jpg",
+    "originalBytes": 137725,
+    "small": {
+      "url": "/assets/media/manager-restaurante-640.7fa1432d90cf.webp",
+      "bytes": 30408,
+      "width": 640,
+      "height": 360
+    },
+    "large": {
+      "url": "/assets/media/manager-restaurante-1200.815398a2ebcc.webp",
+      "bytes": 90756,
+      "width": 1199,
+      "height": 675
+    }
+  },
+  "restaurant-queue": {
+    "source": "https://github.com/betoarts/restaurant-queue/blob/main/docs/restaurant-queue-cover.jpg",
+    "originalBytes": 145534,
+    "small": {
+      "url": "/assets/media/restaurant-queue-640.fbe92b6a9143.webp",
+      "bytes": 34896,
+      "width": 640,
+      "height": 360
+    },
+    "large": {
+      "url": "/assets/media/restaurant-queue-1200.462cfeb9cbbf.webp",
+      "bytes": 94096,
+      "width": 1199,
+      "height": 675
+    }
+  },
+  "fleet-control": {
+    "source": "https://github.com/betoarts/fleet-control/blob/main/docs/fleet-control-cover.jpg",
+    "originalBytes": 152043,
+    "small": {
+      "url": "/assets/media/fleet-control-640.e4db523d4a19.webp",
+      "bytes": 34146,
+      "width": 640,
+      "height": 360
+    },
+    "large": {
+      "url": "/assets/media/fleet-control-1200.71374e3b6bbb.webp",
+      "bytes": 100632,
+      "width": 1199,
+      "height": 675
+    }
+  },
+  "localtv": {
+    "source": "https://github.com/betoarts/localTV/blob/main/docs/localtv-cover.jpg",
+    "originalBytes": 161419,
+    "small": {
+      "url": "/assets/media/localtv-640.702ee6adbf6b.webp",
+      "bytes": 37078,
+      "width": 640,
+      "height": 360
+    },
+    "large": {
+      "url": "/assets/media/localtv-1200.9d8a82c1d520.webp",
+      "bytes": 110958,
+      "width": 1199,
+      "height": 675
+    }
+  },
+  "certificados": {
+    "source": "https://github.com/betoarts/gerador-de-certificado/blob/main/docs/certificado-generator-cover.jpg",
+    "originalBytes": 153400,
+    "small": {
+      "url": "/assets/media/certificados-640.f565663f708f.webp",
+      "bytes": 35010,
+      "width": 640,
+      "height": 360
+    },
+    "large": {
+      "url": "/assets/media/certificados-1200.729246053b94.webp",
+      "bytes": 100194,
+      "width": 1199,
+      "height": 675
+    }
+  },
+  "habitflow": {
+    "source": "https://github.com/betoarts/Habitat-flow/blob/main/docs/habitflow-cover.jpg",
+    "originalBytes": 112374,
+    "small": {
+      "url": "/assets/media/habitflow-640.3f785826fe53.webp",
+      "bytes": 26652,
+      "width": 640,
+      "height": 360
+    },
+    "large": {
+      "url": "/assets/media/habitflow-1200.169d830a6c99.webp",
+      "bytes": 73686,
+      "width": 1199,
+      "height": 675
+    }
+  },
+  "resumeai": {
+    "source": "https://github.com/betoarts/Resumeai-pro-studio/blob/main/docs/resumeai-studio-cover.jpg",
+    "originalBytes": 108487,
+    "small": {
+      "url": "/assets/media/resumeai-640.3aff46a7381b.webp",
+      "bytes": 24420,
+      "width": 640,
+      "height": 360
+    },
+    "large": {
+      "url": "/assets/media/resumeai-1200.43c92d4354e4.webp",
+      "bytes": 67276,
+      "width": 1199,
+      "height": 675
+    }
+  },
+  "portrait": {
+    "small": {
+      "url": "/assets/media/humberto-moura-400.6266c8c6ad7c.webp",
+      "bytes": 12682,
+      "width": 400,
+      "height": 480
+    },
+    "large": {
+      "url": "/assets/media/humberto-moura-800.94d87c14474a.webp",
+      "bytes": 40800,
+      "width": 800,
+      "height": 960
+    },
+    "ambient": {
+      "url": "/assets/media/ambient-80.8f2cb24d61f2.webp",
+      "bytes": 580,
+      "width": 80,
+      "height": 96
+    }
+  },
+  "social": {
+    "url": "/assets/media/humberto-moura-social-1200.1a3f62c63cf7.jpg",
+    "bytes": 82026,
+    "width": 1200,
+    "height": 630
+  }
+}

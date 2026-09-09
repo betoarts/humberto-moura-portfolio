@@ -7,3 +7,10 @@ Dockerfile
 docker-compose.yml
 .dockerignore
 .DS_Store
+dist/assets/humberto-moura.png
+dist/assets/humberto-moura.jpg
+dist/assets/experience.js
+dist/assets/experience.css
+dist/assets/studio.js
+dist/assets/studio.css
+scripts

@@ -12,7 +12,7 @@ Portfólio interativo de Humberto Moura Neto, desenvolvedor e criador de produto
 
 ## Publicação no EasyPanel
 
-O projeto é estático e não requer banco de dados nem variáveis de ambiente.
+O projeto é estático e não requer banco de dados. Configure `SITE_URL` com o domínio HTTPS público para habilitar canonical, sitemap e prévias de compartilhamento.
 
 1. Crie uma aplicação a partir deste repositório.
 2. Selecione a implantação por `Dockerfile`.
@@ -28,7 +28,7 @@ Interface escura com painéis translúcidos, fundo fotográfico local com blur, 
 
 HTML, CSS e JavaScript nativos, sem dependência de framework de animação. Respeita movimento reduzido; inclui navegação por teclado e adaptação para celular. A Apple Brasil foi consultada como referência de apresentação de produtos; não se trata de reprodução de seu código ou stack interna.
 
-As capas dos projetos continuam sendo carregadas dos respectivos repositórios do GitHub. A foto do desenvolvedor é local. O Nginx revalida os assets para evitar conteúdo desatualizado após novos deploys.
+As oito capas e o retrato são locais, com variantes WebP responsivas, dimensões declaradas e carregamento sob demanda. Os cards já estão no HTML inicial. Assets com hash recebem cache longo; HTML é revalidado e comprimido pelo Nginx. Uma capa social em JPEG é usada nas prévias de compartilhamento quando `SITE_URL` está configurado.
 
 ## Tecnologias
 
