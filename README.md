@@ -34,6 +34,21 @@ As oito capas e o retrato são locais, com variantes WebP responsivas, dimensõe
 
 HTML, CSS, JavaScript, Docker e Nginx.
 
+## Execução local
+
+```bash
+npm install
+npm run dev -- --host 0.0.0.0 --port 3000
+```
+
+Abra `http://localhost:3000` no navegador.
+
+## Documentação do projeto
+
+- [Estado atual da construção](docs/PROJECT_STATUS.md)
+- [Memória técnica para continuidade](PROJECT_MEMORY.md)
+- [Deploy no EasyPanel](DEPLOY_EASYPANEL.md)
+
 ## Licença
 
 Uso pessoal e portfólio de Humberto Moura Neto.
