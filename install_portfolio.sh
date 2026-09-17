@@ -40,6 +40,15 @@ docker info >/dev/null 2>&1 || die "Docker não está disponível para esta sess
 [[ -f "${SCRIPT_DIR}/Dockerfile" ]] || die "Dockerfile não encontrado em ${SCRIPT_DIR}"
 [[ -d "${SCRIPT_DIR}/dist" ]] || die "dist/ não encontrado; gere o site antes da instalação"
 
+if ! command -v nginx >/dev/null 2>&1; then
+  if ss -ltnH '( sport = :80 )' | grep -q .; then
+    die "Nginx não está instalado e a porta 80 já está ocupada; nenhum container foi iniciado. Configure o proxy existente para 127.0.0.1:${APP_PORT}"
+  fi
+  log "Nginx não encontrado; instalando o pacote da distribuição"
+  apt-get update
+  DEBIAN_FRONTEND=noninteractive apt-get install -y nginx
+fi
+
 log "Construindo a imagem do portfólio"
 docker build --pull -t "${IMAGE_NAME}" "${SCRIPT_DIR}"
 
@@ -59,15 +68,6 @@ docker run -d \
   --env "SITE_URL=https://${DOMAIN}" \
   -p "127.0.0.1:${APP_PORT}:80" \
   "${IMAGE_NAME}" >/dev/null
-
-if ! command -v nginx >/dev/null 2>&1; then
-  if ss -ltnH '( sport = :80 )' | grep -q .; then
-    die "Nginx não está instalado e a porta 80 já está ocupada; nenhum proxy foi alterado"
-  fi
-  log "Nginx não encontrado; instalando o pacote da distribuição"
-  apt-get update
-  DEBIAN_FRONTEND=noninteractive apt-get install -y nginx
-fi
 
 mkdir -p /etc/nginx/sites-available /etc/nginx/sites-enabled
 if [[ -e "${NGINX_CONF}" && ! -L "${NGINX_CONF}" ]]; then
