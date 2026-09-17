@@ -22,6 +22,26 @@ O projeto é estático e não requer banco de dados. Configure `SITE_URL` com o 
 
 Veja instruções complementares em [DEPLOY_EASYPANEL.md](DEPLOY_EASYPANEL.md).
 
+## Instalação direta em VPS
+
+Para instalar o portfólio em uma VPS Ubuntu/Debian sem interromper outras aplicações, use o instalador isolado [`install_portfolio.sh`](install_portfolio.sh). Ele cria o container `viberdev-portfolio` na porta local `18080` e adiciona uma configuração Nginx somente para o domínio escolhido.
+
+Depois de clonar este repositório na VPS, informe o domínio como argumento:
+
+```bash
+sudo ./install_portfolio.sh viberdev.pro
+```
+
+Também é possível executar sem argumento e preencher o domínio quando o script solicitar:
+
+```bash
+sudo ./install_portfolio.sh
+```
+
+O script instala Docker ou Nginx caso estejam ausentes, cria um backup da configuração Nginx do próprio portfólio, valida `nginx -t` antes do reload e verifica `/health`. Ele não reinicia a VPS e não remove containers que não tenham sido criados por ele.
+
+Antes do acesso público, aponte o registro A do domínio para o IP da VPS. O instalador configura HTTP; o HTTPS deve ser configurado no proxy/certificado da VPS ou na Cloudflare.
+
 ## Experiência e direção visual
 
 Interface escura com painéis translúcidos, fundo fotográfico local com blur, animações de entrada e profundidade discreta. Seções de serviços, processo, perguntas frequentes e escolha de interesse ajudam o visitante a iniciar uma conversa sobre seu projeto.
